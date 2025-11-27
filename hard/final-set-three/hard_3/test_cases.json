@@ -1,0 +1,15 @@
+{
+  "description": "Visible test case for NanoGrad Autograd Engine",
+  "note": "This test case does NOT include expected outputs. Use it to understand the testing approach.",
+  "test_case": {
+    "id": 1,
+    "name": "Basic gradient computation",
+    "description": "Tests simple expression: f(x, y) = x*y + x^2",
+    "inputs": {
+      "x": 2.0,
+      "y": 3.0
+    },
+    "expression": "z = x * y + x**2",
+    "hint": "Expected gradients: dz/dx = y + 2*x = 3 + 4 = 7, dz/dy = x = 2"
+  }
+}
